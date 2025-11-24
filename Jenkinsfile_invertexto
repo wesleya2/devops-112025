@@ -22,7 +22,7 @@ pipeline {
                 slackSend channel: '#devops', message: "Checkout iniciado", tokenCredentialId: 'slack-token'
             }
         }
-        
+
         stage('Build Images') {
             steps {
                 slackSend channel: '#devops', message: "Build das imagens iniciado", tokenCredentialId: 'slack-token'
@@ -36,6 +36,6 @@ pipeline {
                 }
             }
         }
-
-    }   
+    }
 }
+
